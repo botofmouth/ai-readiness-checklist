@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI-readiness checklist for small business websites</title>
+<meta name="description" content="Twelve checks that decide whether ChatGPT, Gemini, Claude and Perplexity can find and read your business. Each one comes from the assistants&#x27; own documentation or a public study.">
+<link rel="canonical" href="https://botofmouth.github.io/ai-readiness-checklist/">
+<link rel="alternate" hreflang="en" href="https://botofmouth.github.io/ai-readiness-checklist/">
+<link rel="alternate" hreflang="es" href="https://botofmouth.github.io/ai-readiness-checklist/es/">
+<meta property="og:title" content="AI-readiness checklist for small business websites">
+<meta property="og:description" content="Twelve checks that decide whether ChatGPT, Gemini, Claude and Perplexity can find and read your business. Each one comes from the assistants&#x27; own documentation or a public study.">
+<meta property="og:image" content="https://botofmouth.github.io/ai-readiness-checklist/og.png">
+<meta property="og:url" content="https://botofmouth.github.io/ai-readiness-checklist/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.png">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"AI-readiness checklist for small business websites","inLanguage":"en","dateModified":"2026-11-11","publisher":{"@type":"Organization","name":"BotOfMouth","url":"https://botofmouth.com/"}}</script>
+<style>
+:root{--bg:#fff;--card:#FBF7EC;--edge:#E6DCC3;--ink:#2A1D17;--soft:#6B5B52;--sea:#0F5E5C;--saffron:#FFC21A}
+@media (prefers-color-scheme:dark){:root{--bg:#17110E;--card:#221A15;--edge:#3D3028;--ink:#F6EFE6;--soft:#B9A99C;--sea:#7FD1CC}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:18px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main{max-width:760px;margin:0 auto;padding:28px 20px 60px}
+header{display:flex;justify-content:space-between;align-items:center;gap:12px;border-bottom:3px solid var(--saffron);padding-bottom:14px}
+.brand{display:flex;align-items:center;gap:10px;color:var(--ink);text-decoration:none;font-weight:700}
+.brand img{width:40px;height:40px;border-radius:50%;background:#fff}
+.lang{color:var(--sea);font-weight:600}
+h1{font:700 36px/1.15 Georgia,"Times New Roman",serif;margin:26px 0 10px}
+.lede{color:var(--soft);margin:0 0 16px}
+.bar{position:sticky;top:0;background:var(--bg);padding:10px 0;display:flex;align-items:center;gap:14px;z-index:1}
+.meter{flex:1;height:10px;background:var(--card);border:1px solid var(--edge);border-radius:99px;overflow:hidden}
+.meter i{display:block;height:100%;width:0;background:var(--saffron);transition:width .2s}
+.count{font-weight:700;font-variant-numeric:tabular-nums;white-space:nowrap}
+h2{font:700 22px/1.25 system-ui,sans-serif;margin:30px 0 10px}
+ol{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+li label{display:flex;gap:14px;align-items:flex-start;background:var(--card);border:1px solid var(--edge);border-radius:14px;padding:14px 16px;cursor:pointer}
+input{width:24px;height:24px;margin-top:2px;flex:none;accent-color:#0F5E5C}
+li b{display:block}
+.how{display:block;color:var(--soft);font-size:16px;margin-top:4px}
+.src{color:var(--sea);white-space:normal}
+input:checked+span b{text-decoration:line-through;text-decoration-color:var(--saffron);text-decoration-thickness:3px}
+.note{color:var(--soft);font-size:16px}
+button{font:600 16px system-ui,sans-serif;background:transparent;color:var(--ink);border:1.5px solid var(--ink);border-radius:9px;padding:8px 14px;cursor:pointer}
+.honest{background:var(--card);border-left:4px solid var(--saffron);padding:12px 16px;border-radius:8px;margin:30px 0}
+footer{border-top:1px solid var(--edge);margin-top:30px;padding-top:16px;color:var(--soft);font-size:16px}
+footer a{color:var(--sea)}
+</style>
+</head>
+<body>
+<main>
+<header><a class="brand" href="https://botofmouth.com/"><img src="favicon.png" alt="">BotOfMouth</a><a class="lang" href="es/" hreflang="es" lang="es">Español</a></header>
+<h1>AI-readiness checklist for small business websites</h1>
+<p class="lede">Twelve checks that decide whether ChatGPT, Gemini, Claude and Perplexity can find and read your business. Each one comes from the assistants&#x27; own documentation or a public study.</p>
+<div class="bar"><div class="meter"><i id="m"></i></div><span class="count"><span id="n">0</span> / 12 done</span></div>
+<section><h2>Can AI assistants reach your site?</h2><ol><li><label><input type="checkbox" data-id="search-bots"><span><b>Your site lets in the search crawlers of the AI assistants.</b><span class="how">Open yoursite.com/robots.txt. Make sure it doesn&#x27;t block OAI-SearchBot (ChatGPT), Claude-SearchBot (Claude), PerplexityBot (Perplexity) or Googlebot (Google, Gemini). OpenAI says sites that block OAI-SearchBot will not be shown in ChatGPT search answers. <a class="src" href="https://platform.openai.com/docs/bots">Source: OpenAI crawlers</a></span></span></label></li><li><label><input type="checkbox" data-id="firewall"><span><b>Your firewall or CDN doesn&#x27;t block them either.</b><span class="how">Some security settings block AI crawlers even when robots.txt allows them. Ask your web person to check the firewall or CDN logs for blocked requests from these crawlers. <a class="src" href="https://support.claude.com/en/articles/8896518-does-anthropic-crawl-data-from-the-web-and-how-can-site-owners-block-the-crawler">Source: Anthropic crawlers</a></span></span></label></li><li><label><input type="checkbox" data-id="indexed"><span><b>Google can index your main pages.</b><span class="how">Search Google for site:yoursite.com. Google says a page must be indexed and eligible for a snippet to appear in AI Overviews and AI Mode. <a class="src" href="https://developers.google.com/search/docs/appearance/ai-features">Source: Google: AI features and your website</a></span></span></label></li></ol></section><section><h2>Can they read what matters?</h2><ol><li><label><input type="checkbox" data-id="text"><span><b>Your key facts are written as plain text on the page.</b><span class="how">What you do, where you are, your hours, how to contact or book you. Not only inside images, PDFs or widgets. Google&#x27;s checklist asks that important content be available in textual form. <a class="src" href="https://developers.google.com/search/docs/appearance/ai-features">Source: Google: AI features and your website</a></span></span></label></li><li><label><input type="checkbox" data-id="no-js"><span><b>Those facts show up without JavaScript.</b><span class="how">Most AI crawlers don&#x27;t run JavaScript (Google&#x27;s is the exception). Open your page with JavaScript turned off, or ask your web person to check the raw HTML. If your services or rooms only appear after the page loads, many assistants may never see them. <a class="src" href="https://vercel.com/blog/the-rise-of-the-ai-crawler">Source: Vercel: The rise of the AI crawler</a></span></span></label></li><li><label><input type="checkbox" data-id="leftovers"><span><b>No template leftovers.</b><span class="how">Look for placeholder text such as &quot;Lorem ipsum&quot;, &quot;[City]&quot; or &quot;Customer Name&quot;, and for badges or reviews that aren&#x27;t real. Assistants read everything on the page and may treat it as a warning sign.</span></span></label></li></ol></section><section><h2>Do your facts agree everywhere?</h2><ol><li><label><input type="checkbox" data-id="gbp"><span><b>Your Google Business Profile is complete and current.</b><span class="how">Check the category, hours, phone, photos and the link to your own website. Google names Business Profile among the things that help a business appear in AI responses. <a class="src" href="https://developers.google.com/search/docs/fundamentals/ai-optimization-guide">Source: Google: AI optimization guide</a></span></span></label></li><li><label><input type="checkbox" data-id="nap"><span><b>Name, address and phone match on every listing.</b><span class="how">Compare your website, Google, Facebook, and the main directories and review sites for your trade. One phone number and one address, written the same way everywhere.</span></span></label></li><li><label><input type="checkbox" data-id="reviews"><span><b>You earn real reviews and reply to them.</b><span class="how">Never buy or write reviews. Google warns that chasing inauthentic mentions isn&#x27;t as helpful as it might seem. <a class="src" href="https://developers.google.com/search/docs/fundamentals/ai-optimization-guide">Source: Google: AI optimization guide</a></span></span></label></li></ol></section><section><h2>Nice to have</h2><ol><li><label><input type="checkbox" data-id="schema"><span><b>Structured data repeats the same facts as the page.</b><span class="how">Optional. Google says no special schema.org markup is needed for AI answers, and that structured data must match the visible text. If you use it, keep it true. <a class="src" href="https://developers.google.com/search/docs/fundamentals/ai-optimization-guide">Source: Google: AI optimization guide</a></span></span></label></li><li><label><input type="checkbox" data-id="llms"><span><b>An llms.txt file, if you like.</b><span class="how">Optional and cheap. Google Search ignores it, and studies have found no effect on how often a site is cited. It mostly helps coding tools read documentation. <a class="src" href="https://llmstxt.org/">Source: llmstxt.org</a></span></span></label></li></ol></section><section><h2>Then check the answers</h2><ol><li><label><input type="checkbox" data-id="ask"><span><b>Ask the assistants yourself, more than once.</b><span class="how">Write down five questions your customers would really ask, without your business name. Ask ChatGPT, Gemini, Claude and Perplexity, on different days. Note who gets named and where the links go. Answers change almost every time, so look at how often you come up, not at one answer. <a class="src" href="https://sparktoro.com/blog/new-research-ais-are-highly-inconsistent-when-recommending-brands-or-products-marketers-should-take-care-when-tracking-ai-visibility/">Source: SparkToro: AI recommendations are inconsistent</a></span></span></label></li></ol></section>
+<p class="honest">Nobody can guarantee that an AI assistant will name a business. These checks make sure the facts are there when it looks.</p>
+<p class="note">Your ticks are saved in this browser only. <button id="r">Clear my ticks</button></p>
+<footer>
+<p>An open checklist by <a href="https://botofmouth.com/">BotOfMouth</a>. Free website check at <a href="https://botofmouth.com/">botofmouth.com</a>.</p>
+<p>Updated 11 November 2026 · Text: CC BY 4.0. Suggestions welcome on GitHub. <a href="https://github.com/botofmouth/ai-readiness-checklist">github.com/botofmouth/ai-readiness-checklist</a></p>
+</footer>
+</main>
+<script>
+const key='ai-readiness-checklist',boxes=[...document.querySelectorAll('input[type=checkbox]')];
+let saved={};try{saved=JSON.parse(localStorage[key]||'{}')}catch(e){}
+function update(){const n=boxes.filter(b=>b.checked).length;document.getElementById('n').textContent=n;document.getElementById('m').style.width=(100*n/boxes.length)+'%'}
+boxes.forEach(b=>{b.checked=!!saved[b.dataset.id];b.addEventListener('change',()=>{saved[b.dataset.id]=b.checked;localStorage[key]=JSON.stringify(saved);update()})});
+document.getElementById('r').addEventListener('click',()=>{saved={};localStorage[key]='{}';boxes.forEach(b=>b.checked=false);update()});
+update();
+</script>
+</body>
+</html>

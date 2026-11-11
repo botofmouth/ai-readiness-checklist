@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Lista de preparación para IA para sitios web de negocios pequeños</title>
+<meta name="description" content="Doce revisiones que deciden si ChatGPT, Gemini, Claude y Perplexity pueden encontrar y leer su negocio. Cada una sale de la documentación de los propios asistentes o de un estudio público.">
+<link rel="canonical" href="https://botofmouth.github.io/ai-readiness-checklist/es/">
+<link rel="alternate" hreflang="en" href="https://botofmouth.github.io/ai-readiness-checklist/">
+<link rel="alternate" hreflang="es" href="https://botofmouth.github.io/ai-readiness-checklist/es/">
+<meta property="og:title" content="Lista de preparación para IA para sitios web de negocios pequeños">
+<meta property="og:description" content="Doce revisiones que deciden si ChatGPT, Gemini, Claude y Perplexity pueden encontrar y leer su negocio. Cada una sale de la documentación de los propios asistentes o de un estudio público.">
+<meta property="og:image" content="https://botofmouth.github.io/ai-readiness-checklist/og.png">
+<meta property="og:url" content="https://botofmouth.github.io/ai-readiness-checklist/es/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../favicon.png">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Lista de preparación para IA para sitios web de negocios pequeños","inLanguage":"es","dateModified":"2026-11-11","publisher":{"@type":"Organization","name":"BotOfMouth","url":"https://botofmouth.com/"}}</script>
+<style>
+:root{--bg:#fff;--card:#FBF7EC;--edge:#E6DCC3;--ink:#2A1D17;--soft:#6B5B52;--sea:#0F5E5C;--saffron:#FFC21A}
+@media (prefers-color-scheme:dark){:root{--bg:#17110E;--card:#221A15;--edge:#3D3028;--ink:#F6EFE6;--soft:#B9A99C;--sea:#7FD1CC}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:18px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main{max-width:760px;margin:0 auto;padding:28px 20px 60px}
+header{display:flex;justify-content:space-between;align-items:center;gap:12px;border-bottom:3px solid var(--saffron);padding-bottom:14px}
+.brand{display:flex;align-items:center;gap:10px;color:var(--ink);text-decoration:none;font-weight:700}
+.brand img{width:40px;height:40px;border-radius:50%;background:#fff}
+.lang{color:var(--sea);font-weight:600}
+h1{font:700 36px/1.15 Georgia,"Times New Roman",serif;margin:26px 0 10px}
+.lede{color:var(--soft);margin:0 0 16px}
+.bar{position:sticky;top:0;background:var(--bg);padding:10px 0;display:flex;align-items:center;gap:14px;z-index:1}
+.meter{flex:1;height:10px;background:var(--card);border:1px solid var(--edge);border-radius:99px;overflow:hidden}
+.meter i{display:block;height:100%;width:0;background:var(--saffron);transition:width .2s}
+.count{font-weight:700;font-variant-numeric:tabular-nums;white-space:nowrap}
+h2{font:700 22px/1.25 system-ui,sans-serif;margin:30px 0 10px}
+ol{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+li label{display:flex;gap:14px;align-items:flex-start;background:var(--card);border:1px solid var(--edge);border-radius:14px;padding:14px 16px;cursor:pointer}
+input{width:24px;height:24px;margin-top:2px;flex:none;accent-color:#0F5E5C}
+li b{display:block}
+.how{display:block;color:var(--soft);font-size:16px;margin-top:4px}
+.src{color:var(--sea);white-space:normal}
+input:checked+span b{text-decoration:line-through;text-decoration-color:var(--saffron);text-decoration-thickness:3px}
+.note{color:var(--soft);font-size:16px}
+button{font:600 16px system-ui,sans-serif;background:transparent;color:var(--ink);border:1.5px solid var(--ink);border-radius:9px;padding:8px 14px;cursor:pointer}
+.honest{background:var(--card);border-left:4px solid var(--saffron);padding:12px 16px;border-radius:8px;margin:30px 0}
+footer{border-top:1px solid var(--edge);margin-top:30px;padding-top:16px;color:var(--soft);font-size:16px}
+footer a{color:var(--sea)}
+</style>
+</head>
+<body>
+<main>
+<header><a class="brand" href="https://botofmouth.com/"><img src="../favicon.png" alt="">BotOfMouth</a><a class="lang" href="../" hreflang="en" lang="en">English</a></header>
+<h1>Lista de preparación para IA para sitios web de negocios pequeños</h1>
+<p class="lede">Doce revisiones que deciden si ChatGPT, Gemini, Claude y Perplexity pueden encontrar y leer su negocio. Cada una sale de la documentación de los propios asistentes o de un estudio público.</p>
+<div class="bar"><div class="meter"><i id="m"></i></div><span class="count"><span id="n">0</span> / 12 listas</span></div>
+<section><h2>¿Los asistentes de IA pueden entrar a su sitio?</h2><ol><li><label><input type="checkbox" data-id="search-bots"><span><b>Su sitio deja entrar a los rastreadores de búsqueda de los asistentes de IA.</b><span class="how">Abra susitio.com/robots.txt. Revise que no bloquee a OAI-SearchBot (ChatGPT), Claude-SearchBot (Claude), PerplexityBot (Perplexity) ni a Googlebot (Google, Gemini). OpenAI dice que los sitios que bloquean a OAI-SearchBot no aparecen en las respuestas de búsqueda de ChatGPT. <a class="src" href="https://platform.openai.com/docs/bots">Fuente: OpenAI crawlers</a></span></span></label></li><li><label><input type="checkbox" data-id="firewall"><span><b>Su firewall o CDN tampoco los bloquea.</b><span class="how">Algunas configuraciones de seguridad bloquean a los rastreadores de IA aunque robots.txt los permita. Pídale a quien maneja su sitio que revise los registros del firewall o del CDN. <a class="src" href="https://support.claude.com/en/articles/8896518-does-anthropic-crawl-data-from-the-web-and-how-can-site-owners-block-the-crawler">Fuente: Anthropic crawlers</a></span></span></label></li><li><label><input type="checkbox" data-id="indexed"><span><b>Google puede indexar sus páginas principales.</b><span class="how">Busque en Google site:susitio.com. Google dice que una página debe estar indexada y poder mostrarse con fragmento para aparecer en sus respuestas con IA. <a class="src" href="https://developers.google.com/search/docs/appearance/ai-features">Fuente: Google: AI features and your website</a></span></span></label></li></ol></section><section><h2>¿Pueden leer lo importante?</h2><ol><li><label><input type="checkbox" data-id="text"><span><b>Sus datos clave están escritos como texto en la página.</b><span class="how">Qué hace, dónde está, su horario, cómo contactarlo o reservar. No solo dentro de imágenes, PDF o widgets. Google pide que el contenido importante esté disponible en forma de texto. <a class="src" href="https://developers.google.com/search/docs/appearance/ai-features">Fuente: Google: AI features and your website</a></span></span></label></li><li><label><input type="checkbox" data-id="no-js"><span><b>Esos datos aparecen sin JavaScript.</b><span class="how">La mayoría de los rastreadores de IA no ejecutan JavaScript (el de Google es la excepción). Abra su página con JavaScript desactivado, o pídale a quien maneja su sitio que revise el HTML. Si sus servicios o habitaciones aparecen solo después de cargar la página, muchos asistentes quizá nunca los vean. <a class="src" href="https://vercel.com/blog/the-rise-of-the-ai-crawler">Fuente: Vercel: The rise of the AI crawler</a></span></span></label></li><li><label><input type="checkbox" data-id="leftovers"><span><b>Sin restos de la plantilla.</b><span class="how">Busque textos de relleno como «Lorem ipsum», «[Ciudad]» o «Nombre del cliente», y sellos o reseñas que no sean reales. Los asistentes leen todo lo que hay en la página y pueden tomarlo como una señal de alerta.</span></span></label></li></ol></section><section><h2>¿Sus datos coinciden en todas partes?</h2><ol><li><label><input type="checkbox" data-id="gbp"><span><b>Su Perfil de Negocio en Google está completo y al día.</b><span class="how">Revise la categoría, el horario, el teléfono, las fotos y el enlace a su propio sitio. Google menciona el Perfil de Negocio entre lo que ayuda a un negocio a aparecer en las respuestas con IA. <a class="src" href="https://developers.google.com/search/docs/fundamentals/ai-optimization-guide">Fuente: Google: AI optimization guide</a></span></span></label></li><li><label><input type="checkbox" data-id="nap"><span><b>Nombre, dirección y teléfono coinciden en todas sus fichas.</b><span class="how">Compare su sitio, Google, Facebook y los principales directorios y sitios de reseñas de su sector. Un solo teléfono y una sola dirección, escritos igual en todas partes.</span></span></label></li><li><label><input type="checkbox" data-id="reviews"><span><b>Usted consigue reseñas reales y las responde.</b><span class="how">Nunca compre ni escriba reseñas. Google advierte que buscar menciones que no son auténticas no ayuda tanto como parece. <a class="src" href="https://developers.google.com/search/docs/fundamentals/ai-optimization-guide">Fuente: Google: AI optimization guide</a></span></span></label></li></ol></section><section><h2>Opcional</h2><ol><li><label><input type="checkbox" data-id="schema"><span><b>Los datos estructurados repiten los mismos datos de la página.</b><span class="how">Opcional. Google dice que no hace falta un marcado especial de schema.org para las respuestas con IA, y que los datos estructurados deben coincidir con el texto visible. Si los usa, que sean correctos. <a class="src" href="https://developers.google.com/search/docs/fundamentals/ai-optimization-guide">Fuente: Google: AI optimization guide</a></span></span></label></li><li><label><input type="checkbox" data-id="llms"><span><b>Un archivo llms.txt, si quiere.</b><span class="how">Opcional y barato. La Búsqueda de Google lo ignora, y los estudios no encontraron efecto en cuántas veces se cita un sitio. Sirve sobre todo para que las herramientas de programación lean documentación. <a class="src" href="https://llmstxt.org/">Fuente: llmstxt.org</a></span></span></label></li></ol></section><section><h2>Después, revise las respuestas</h2><ol><li><label><input type="checkbox" data-id="ask"><span><b>Pregúntele usted mismo a los asistentes, más de una vez.</b><span class="how">Anote cinco preguntas que sus clientes harían de verdad, sin el nombre de su negocio. Hágalas en ChatGPT, Gemini, Claude y Perplexity, en días distintos. Anote a quién nombran y a dónde llevan los enlaces. Las respuestas cambian casi cada vez: fíjese en qué tan seguido aparece, no en una sola respuesta. <a class="src" href="https://sparktoro.com/blog/new-research-ais-are-highly-inconsistent-when-recommending-brands-or-products-marketers-should-take-care-when-tracking-ai-visibility/">Fuente: SparkToro: AI recommendations are inconsistent</a></span></span></label></li></ol></section>
+<p class="honest">Nadie puede garantizar que un asistente de IA nombre a un negocio. Estas revisiones aseguran que los datos estén ahí cuando busque.</p>
+<p class="note">Sus marcas se guardan solo en este navegador. <button id="r">Borrar mis marcas</button></p>
+<footer>
+<p>Una lista abierta de <a href="https://botofmouth.com/">BotOfMouth</a>. Revisión gratis de su sitio en <a href="https://botofmouth.com/es/">botofmouth.com</a>.</p>
+<p>Actualizado el 11 de noviembre de 2026 · Texto: CC BY 4.0. Sugerencias bienvenidas en GitHub. <a href="https://github.com/botofmouth/ai-readiness-checklist">github.com/botofmouth/ai-readiness-checklist</a></p>
+</footer>
+</main>
+<script>
+const key='ai-readiness-checklist',boxes=[...document.querySelectorAll('input[type=checkbox]')];
+let saved={};try{saved=JSON.parse(localStorage[key]||'{}')}catch(e){}
+function update(){const n=boxes.filter(b=>b.checked).length;document.getElementById('n').textContent=n;document.getElementById('m').style.width=(100*n/boxes.length)+'%'}
+boxes.forEach(b=>{b.checked=!!saved[b.dataset.id];b.addEventListener('change',()=>{saved[b.dataset.id]=b.checked;localStorage[key]=JSON.stringify(saved);update()})});
+document.getElementById('r').addEventListener('click',()=>{saved={};localStorage[key]='{}';boxes.forEach(b=>b.checked=false);update()});
+update();
+</script>
+</body>
+</html>
